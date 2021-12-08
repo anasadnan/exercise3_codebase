@@ -5,12 +5,12 @@
 //? Exercise 3: Navigation and Routing
 
 // Date: 12 December 2021
-// Member 1's Name: _____________    Section: _____   Location: ____________ (i.e. where are you currently located)
-// Member 2's Name: _____________    Section: _____   Location: ____________
+// Member 1's Name: Mohd Anas Bin Adnan    Section: 01   Location: Alor Setar, Kedah. (i.e. where are you currently located)
+// Member 2's Name: Alya Nasuha binti Mohammad Nasiruddin    Section: 01   Location: Klang, Selangor
 
 // Log the time(s) your pair programming sessions
 //  Date         Time (From)   To             Duration (in minutes)
-//  _________    ___________   ___________    ________
+//  8/12/2021    3:00PM
 //  _________    ___________   ___________    ________
 //  _________    ___________   ___________    ________
 
