@@ -25,7 +25,7 @@ void main() => runApp(
         title: 'MAP Exercise 3',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(primarySwatch: Colors.purple),
-        home: TodoListScreen(),
+        home: TodoListScreen(myTodoList),
         // home: TaskListScreen(), //? uncomment this out to preview the second screen. Later, you want to remove this line
       ),
     );

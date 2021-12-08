@@ -1,8 +1,20 @@
 // TODO Complete this file. This class should receive data from the TaskListScreen.
 //
 import 'package:flutter/material.dart';
+import '../../models/todo.dart';
 
-class Float extends StatelessWidget {
+class Float extends StatefulWidget {
+  final Todo todo;
+
+  Float(this.todo);
+  @override
+  State<Float> createState() => _FloatState();
+}
+
+class _FloatState extends State<Float> {
+  var change = new List(20);
+  bool signal = false;
+
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -10,13 +22,15 @@ class Float extends StatelessWidget {
       children: <Widget>[
         FloatingActionButton.extended(
           heroTag: null,
-          onPressed: () {},
+          onPressed: () => setState(() {
+            Navigator.pop(context, widget.todo);
+          }),
           label: Text('Update'),
           icon: Icon(Icons.check_circle),
         ),
         FloatingActionButton.extended(
           heroTag: null,
-          onPressed: () {},
+          onPressed: () => Navigator.pop(context, widget.todo),
           label: Text('Cancel'),
           icon: Icon(Icons.cancel),
         ),

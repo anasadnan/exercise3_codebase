@@ -2,11 +2,14 @@
 
 import 'package:flutter/material.dart';
 
-// import '../../models/todo.dart';
+import '../../models/todo.dart';
 import 'bar.dart';
 import 'body.dart';
 
 class TodoListScreen extends StatefulWidget {
+  final List<Todo> todo;
+
+  TodoListScreen(this.todo);
   @override
   _TodoListScreenState createState() => _TodoListScreenState();
 }
@@ -19,7 +22,7 @@ class _TodoListScreenState extends State<TodoListScreen> {
       child: SafeArea(
         child: Scaffold(
           appBar: Bar(),
-          body: Body(),
+          body: Body(widget.todo),
         ),
       ),
     );

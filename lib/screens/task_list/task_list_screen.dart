@@ -2,7 +2,7 @@
 //
 import 'package:flutter/material.dart';
 
-// import '../../models/todo.dart';
+import '../../models/todo.dart';
 import 'float.dart';
 import 'bar.dart';
 import 'body.dart';
@@ -19,9 +19,9 @@ class _TaskListScreenState extends State<TaskListScreen> {
       onWillPop: () => Future.value(false),
       child: SafeArea(
         child: Scaffold(
-          appBar: Bar(),
-          body: Body(),
-          floatingActionButton: Float(),
+          appBar: Bar(widget.todo),
+          body: Body(widget.todo),
+          floatingActionButton: Float(widget.todo),
         ),
       ),
     );
