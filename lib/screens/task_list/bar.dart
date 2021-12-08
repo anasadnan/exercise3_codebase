@@ -15,7 +15,7 @@ class Bar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       leading: Container(),
       title: Text(
-        'Tak list of \n' + todo.title,
+        'Tak list of \n ' + todo.title,
         textAlign: TextAlign.center,
       ),
       centerTitle: true,
